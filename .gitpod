@@ -1,4 +1,4 @@
-image: csweichel/gitpod-vnc:latest
+image: csweichel/gitpod-vnc-vscode:latest
 ports:
   - port: 6080
     protocol: "http"
