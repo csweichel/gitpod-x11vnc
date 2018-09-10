@@ -1,6 +1,6 @@
 FROM csweichel/gitpod-vnc:latest
 
-COPY startvnc.sh /usr/local/bin
-RUN chmod +x /usr/local/bin/startvnc.sh
+COPY startvnc.sh build_vscode.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/startvnc.sh /usr/local/bin/build_vscode.sh
 RUN apt-get update \
     && apt-get install -y libx11-dev libxkbfile-dev libsecret-1-dev libgconf2-4 libnss3
