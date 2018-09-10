@@ -3,4 +3,4 @@ ports:
   - port: 6080
     protocol: "http"
 tasks:
-  - command: "startvnc.sh & build_vscode.sh"
+  - command: "sh startvnc.sh & sh build_vscode.sh"
