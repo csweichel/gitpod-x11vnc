@@ -1,4 +1,6 @@
 FROM csweichel/gitpod-vnc:latest
 
+COPY startvnc.sh /usr/local/bin
+RUN chmod +x /usr/local/bin/startvnc.sh
 RUN apt-get update \
-    && apt-get install -y libx11-dev libxkbfile-dev libsecret-1-dev
+    && apt-get install -y libx11-dev libxkbfile-dev libsecret-1-dev libgconf2-4 libnss3
