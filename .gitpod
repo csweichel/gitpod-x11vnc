@@ -3,4 +3,4 @@ ports:
   - port: 6080
     protocol: "http"
 tasks:
-  - command: "startx.sh"
+  - command: "startvnc.sh"
