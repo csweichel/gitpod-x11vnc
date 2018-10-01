@@ -1,6 +1,4 @@
-image: csweichel/gitpod-vnc-vscode:latest
+image: gitpod/workspace-full-vnc:latest
 ports:
   - port: 6080
     protocol: "http"
-tasks:
-  - command: "sh startvnc.sh & sh build_vscode.sh"
